@@ -6,3 +6,18 @@ pipelineJob('pipelineJob') {
         }
     }
 }
+
+pipelineJob('booksApi-job') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/adrianCalventos/spring-bookApiRest-.git'
+                    }
+                    branch 'master'
+                }
+            }
+        }
+    }
+}
