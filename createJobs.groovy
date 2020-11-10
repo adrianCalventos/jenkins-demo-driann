@@ -7,7 +7,7 @@ pipelineJob('pipelineJob') {
     }
 }
 
-pipelineJob('booksApi-job') {
+pipelineJob('theme-park-job') {
     definition {
         cpsScm {
             scm {
