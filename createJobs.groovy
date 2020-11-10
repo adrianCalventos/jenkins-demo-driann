@@ -7,7 +7,7 @@ pipelineJob('pipelineJob') {
     }
 }
 
-pipelineJob('theme-park-job') {
+pipelineJob('booksApp') {
     definition {
         cpsScm {
             scm {
