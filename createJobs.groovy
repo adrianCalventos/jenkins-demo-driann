@@ -7,7 +7,7 @@ pipelineJob('pipelineJob') {
     }
 }
 
-pipelineJob('booksApp') {
+pipelineJob('booksApp-docker') {
     definition {
         cpsScm {
             scm {
@@ -16,6 +16,7 @@ pipelineJob('booksApp') {
                         url 'https://github.com/adrianCalventos/spring-bookApiRest-.git'
                     }
                     branch 'master'
+                    scriptPath 'Jenkinsfile'
                 }
             }
         }
